@@ -4,12 +4,13 @@ String description;
 double price; 
 
 public Goods(String description){
-this.description =description; 
+this.description =description;
 }
 
 public Goods(){
-String description = ""; 
+String description = "";
 }
+
 
 public String getDescription(){
 return description; 
@@ -19,6 +20,7 @@ public double getPrice(){
 return price; 
 }
 
-public abstract void display(); 
+public abstract void display();
+
 
 }
