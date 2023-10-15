@@ -1,13 +1,14 @@
 public class Food extends Goods{
 
- int calories = 200;
+int calories;
 String s;
 double pricefood;
 
-public Food(String s, double pricefood){
+public Food(String s, double pricefood, int calories){
 super(); 
 this.s = s;
 this.pricefood = pricefood;
+this.calories = calories;
 }
 
 public Food(){
