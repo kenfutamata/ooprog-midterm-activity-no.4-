@@ -21,10 +21,15 @@ return s;
 }
 
  @Override
+ public double getPrice() {
+  return pricefood;
+ }
+
+ @Override
  public void display() {
 
-  System.out.println("The calories of the good "+s+" food is: "+calories);
-  System.out.println("The cost of the food cost: "+pricefood);
+  System.out.println("The calories of the good "+getGoods()+" food is: "+calories);
+  System.out.println("The cost of the food cost: "+getPrice());
  }
 
 

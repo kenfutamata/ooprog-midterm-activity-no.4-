@@ -3,7 +3,7 @@ public class Toy extends Food implements Taxable{
 int minimum_age; 
 String s;
 
-double price;
+
 
 double pricetoy;
 
@@ -24,10 +24,15 @@ return s;
 }
 
     @Override
+    public double getPrice() {
+        return pricetoy;
+    }
+
+    @Override
     public void display() {
 
-        System.out.println("The good "+s+" requires ages "+ minimum_age);
-        System.out.println("The price is "+pricetoy);
+        System.out.println("The toy "+getGoods()+" requires ages "+ minimum_age);
+        System.out.println("The price is "+getPrice());
 
     }
 
@@ -35,7 +40,7 @@ return s;
     @Override
     public double calculateTax() {
 
-    double finaltaxtoy = pricetoy*tax_rate;
+    double finaltaxtoy = getPrice()*tax_rate;
     return finaltaxtoy;
     }
 }

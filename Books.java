@@ -17,19 +17,22 @@ public class Books extends Toy implements Taxable{
     public String getGoods(){
         return s;
     }
+    public double getPrice(){
+        return pricebook;
+    }
 
     @Override
     public void display() {
 
         System.out.println("The author of book "+getGoods()+" is authored by "+author);
-        System.out.println("The price of the book cost "+pricebook);
+        System.out.println("The price of the book cost "+getPrice());
 
     }
 
     @Override
     public double calculateTax() {
 
-        double finaltaxbooks = pricebook*tax_rate;
+        double finaltaxbooks = getPrice()*tax_rate;
         return finaltaxbooks;
 
     }
