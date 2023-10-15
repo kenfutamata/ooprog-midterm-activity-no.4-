@@ -1,16 +1,13 @@
 public class Toy extends  Goods implements Taxable{
 
 int minimum_age; 
-String s;
 
 
 
-double pricetoy;
 
-public Toy(String s, double pricetoy, int minimum_age){
+public Toy(String description, double price, int minimum_age){
 super();
-this.s = s;
-this.pricetoy = pricetoy;
+this.price = price;
 this.minimum_age = minimum_age;
 }
 
@@ -19,19 +16,19 @@ String s = "";
 
 }
 
-public String getGoods(){
-return s; 
-}
+    public String getDescription(){
+        return description;
+    }
 
     @Override
     public double getPrice() {
-        return pricetoy;
+        return price;
     }
 
     @Override
     public void display() {
 
-        System.out.println("The toy "+getGoods()+" requires ages "+ minimum_age);
+        System.out.println("The toy "+getDescription()+" requires ages "+ minimum_age);
         System.out.println("The price is "+getPrice());
 
     }

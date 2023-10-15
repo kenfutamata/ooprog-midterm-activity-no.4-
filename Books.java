@@ -1,11 +1,10 @@
 public class Books extends Goods implements Taxable{
     String author;
-    String s;
-    double pricebook;
-    public Books(String s, double pricebook, String author){
+
+
+    public Books(String description, double price, String author){
         super();
-        this.s = s;
-        this.pricebook = pricebook;
+        this.price = price;
         this.author = author;
     }
 
@@ -14,17 +13,17 @@ public class Books extends Goods implements Taxable{
 
     }
 
-    public String getGoods(){
-        return s;
+    public String getDescription(){
+        return description;
     }
     public double getPrice(){
-        return pricebook;
+        return price;
     }
 
     @Override
     public void display() {
 
-        System.out.println("The author of book "+getGoods()+" is authored by "+author);
+        System.out.println("The author of book "+getDescription()+" is authored by "+author);
         System.out.println("The price of the book cost "+getPrice());
 
     }

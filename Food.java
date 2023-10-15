@@ -1,34 +1,34 @@
 public class Food extends Goods{
 
 int calories;
-String s;
-double pricefood;
 
-public Food(String s, double pricefood, int calories){
-super(); 
-this.s = s;
-this.pricefood = pricefood;
+
+
+public Food(String description, double price, int calories){
+super();
+this.price = price;
 this.calories = calories;
 }
 
 public Food(){
 String s = "";
-double pricefood;
+double price;
 }
 
-public String getGoods(){
-return s; 
-}
+
+ public String getDescription(){
+  return description;
+ }
 
  @Override
  public double getPrice() {
-  return pricefood;
+  return price;
  }
 
  @Override
  public void display() {
 
-  System.out.println("The calories of the good "+getGoods()+" food is: "+calories);
+  System.out.println("The calories of the good "+getDescription()+" food is: "+calories);
   System.out.println("The cost of the food cost: "+getPrice());
  }
 
