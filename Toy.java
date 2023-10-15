@@ -1,4 +1,4 @@
-public class Toy extends Food implements Taxable{
+public class Toy extends  Goods implements Taxable{
 
 int minimum_age; 
 String s;

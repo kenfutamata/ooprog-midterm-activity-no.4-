@@ -1,4 +1,4 @@
-public class Books extends Toy implements Taxable{
+public class Books extends Goods implements Taxable{
     String author;
     String s;
     double pricebook;
