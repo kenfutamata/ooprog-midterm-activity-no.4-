@@ -9,11 +9,13 @@ public class Main{
         Toy T = new Toy("Rubics cube", 30.45, 5);
         Books B = new Books("What is java programming?", 80.75, "Kento Futamata");
         f.display();
+        System.out.println();
         T.display();
+        System.out.println();
         B.display();
 
-        System.out.println("The final tax for toy is: "+T.calculateTax());
-        System.out.println("The final tax for book is: "+B.calculateTax());
+
+
 
     }
 

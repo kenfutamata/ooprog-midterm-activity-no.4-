@@ -7,6 +7,7 @@ int minimum_age;
 
 public Toy(String description, double price, int minimum_age){
 super();
+this.description = description;
 this.price = price;
 this.minimum_age = minimum_age;
 }
@@ -30,6 +31,7 @@ String s = "";
 
         System.out.println("The toy "+getDescription()+" requires ages "+ minimum_age);
         System.out.println("The price is "+getPrice());
+        System.out.println("The final tax for toy is: "+calculateTax());
 
     }
 

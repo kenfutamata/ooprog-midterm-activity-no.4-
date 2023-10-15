@@ -4,6 +4,7 @@ public class Books extends Goods implements Taxable{
 
     public Books(String description, double price, String author){
         super();
+        this.description = description;
         this.price = price;
         this.author = author;
     }
@@ -25,6 +26,7 @@ public class Books extends Goods implements Taxable{
 
         System.out.println("The author of book "+getDescription()+" is authored by "+author);
         System.out.println("The price of the book cost "+getPrice());
+        System.out.println("The final tax for book is: "+calculateTax());
 
     }
 

@@ -6,6 +6,7 @@ int calories;
 
 public Food(String description, double price, int calories){
 super();
+ this.description = description;
 this.price = price;
 this.calories = calories;
 }
